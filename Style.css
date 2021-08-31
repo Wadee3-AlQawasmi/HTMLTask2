@@ -40,29 +40,39 @@
     background-color: white;
 }
 
-.PersonalBox
+.Box1
 {
     
-    clear: left;
     float: left;
-    height: 350px;
     width: 300px;
-    margin: 40px 1px 0px 0px;
-    background-color: white;
+    height: 590px;
+    background: #E6ECF3;
+    margin-top: 30px;
+}
+
+.Box2
+{
+    float: left;
+    height: 590px;
+    background: #E6ECF3;
+}
+.PersonalBox
+{
+     width: 300px;
+    background: white;
 }
 
 
-
-.Personaldiv
+.ParagraphTitle
 {
-    padding: 15px 0px 23px 27px;
+    padding: 15px 0px 23px 20px;
     border-bottom: 2px solid;
     border-color: #E6ECF3;
     font-weight: bold;
     
 }
 
-.FMEL
+.Info
 {
     padding: 15px 0px 0px 15px;
     font-weight: bold;
@@ -70,17 +80,18 @@
 
 .gray
 {
-    margin: 5px 0px 0px 15px;
+    margin-left: 15px;
     color: darkgray;
 }
 
 .DivBio
-{
+{  
     float: left;
     background-color: white;
     width: 925px;
     height: 265px;
-    margin: 40px 0px 0px 15px;
+    margin: 30px 0px 0px 22px;
+
 }
 
 .DivBioText
@@ -106,21 +117,6 @@
     margin-top: 50px;
 
     
-}
-
-.ListColor
-{
-    color: darkgray;
-    margin-left: 25px;
-}
-
-.DivSkills
-{
-    float: left;
-    background-color: white;
-    width: 925px;
-    height: 345px;
-    margin: -50px 0px 0px 17px;
 }
 
 .Percent

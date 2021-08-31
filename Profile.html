@@ -3,6 +3,32 @@
 <head>
  <link href="Style.css" type="text/css" rel="stylesheet"/>
  <meta name="viewport" content="width-device-width initial scale=1"/>
+
+
+ <script type="text/javascript">
+    function Toggle(value){
+        switch(value){
+            case 'aboutMe':
+                document.getElementById('aboutMe').style.display="block";
+                document.getElementById('Projects').style.display="none";
+                document.getElementById('Settings').style.display="none";
+                break;
+            case 'Projects':
+                document.getElementById('aboutMe').style.display="none";
+                document.getElementById('Projects').style.display="block";
+                document.getElementById('Settings').style.display="none";
+                break;
+            case 'Settins':
+                document.getElementById('aboutMe').style.display="none";
+                document.getElementById('Projects').style.display="none";
+                document.getElementById('Settings').style.display="block";
+                break;
+        }
+    }
+
+    </script>
+
+
 </head>
 
 <body class="body">
@@ -18,39 +44,42 @@
 
           </div>
           <div class="Colorwhite" style="height: 40px;">
-              <div class="APS">
+              <div class="APS" onclick="Toggle('aboutMe')">
                   ABOUT ME 
               </div>
-              <div class="APS">
+              <div class="APS" onclick="Toggle('Projects')">
                   PROJECTS 
               </div>
-              <div class="APS">
+              <div class="APS" onclick="Toggle('Settins')">
                   SETTINGS
               </div>
           </div>
-          <div class="PersonalBox">
-            <div class="Personaldiv">
+          <div id="aboutMe">
+
+        <div class="Box1">
+          <div class="PersonalBox" style="height: 350px;">
+            <div class="ParagraphTitle">
                 PERSONAL INFORMATION
             </div>
-            <div class="FMEL">
+            <div class="Info">
                 Full Name 
             </div>
             <div class="gray">
                 Johnathan Deo
             </div>
-            <div class="FMEL">
+            <div class="Info">
                 Mobile
             </div>
             <div class="gray">
                 (123) 123 1234
             </div>
-            <div class="FMEL">
+            <div class="Info">
                 Email
             </div>
             <div class="gray">
                 johnathandeon@moltran.com
             </div>
-            <div class="FMEL">
+            <div class="Info">
                 Location
             </div>
             <div class="gray">
@@ -58,9 +87,25 @@
             </div>
            
           </div>
-          
+
+          <div class="PersonalBox" style="margin-top: 30px; height: 150px;">
+            
+            <div class="ParagraphTitle">
+                LANGUAGES
+            </div>
+            <div>
+                <ul class="gray">
+                    <li>English</li>
+                    <li>Franch</li>
+                    <li>Greek</li>
+                  </ul>  
+            </div>
+        </div>
+      </div>
+      <div class="Box2">
+        <div>
           <div class="DivBio">
-            <div class="Personaldiv">
+            <div class="ParagraphTitle">
                 BIOGRAPHY
             </div>
             <div class="DivBioText">
@@ -73,22 +118,9 @@
                 It Was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like aldus PageMaker including versions of Lorem Ipsum.
             </div>
           </div>
-          <div class="DivLanguges">
-            
-                <div class="Personaldiv">
-                    LANGUAGES
-                </div>
-                <div>
-                    <ul class="ListColor">
-                        <li>English</li>
-                        <li>Franch</li>
-                        <li>Greek</li>
-                      </ul>  
-                </div>
-            </div>
-
-            <div class="DivSkills">
-                <div class="Personaldiv">
+        </div>
+            <div class="DivBio" style="height: 340px;">
+                <div class="ParagraphTitle">
                     SKILLS 
                 </div>
                 <div class="AJWH">
@@ -129,7 +161,14 @@
                 </div>
             
             </div>
-          
-
+      
+        </div>
+        </div>
+        <div style="display: none;" id="Projects">
+            pro
+        </div>
+<div style="display: none;" id="Settings">
+            sett
+</div>
 </body>
 </html>
