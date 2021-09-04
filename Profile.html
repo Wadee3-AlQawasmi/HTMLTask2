@@ -18,7 +18,7 @@
                 document.getElementById('Projects').style.display="block";
                 document.getElementById('Settings').style.display="none";
                 break;
-            case 'Settins':
+            case 'Settings':
                 document.getElementById('aboutMe').style.display="none";
                 document.getElementById('Projects').style.display="none";
                 document.getElementById('Settings').style.display="block";
@@ -50,9 +50,10 @@
               <div class="APS" onclick="Toggle('Projects')">
                   PROJECTS 
               </div>
-              <div class="APS" onclick="Toggle('Settins')">
-                  SETTINGS
-              </div>
+              <div class="APS" onclick="Toggle('Settings')">
+                SETTIINGS
+            </div>
+             
           </div>
           <div id="aboutMe">
 
@@ -165,10 +166,65 @@
         </div>
         </div>
         <div style="display: none;" id="Projects">
-            pro
-        </div>
-<div style="display: none;" id="Settings">
-            sett
-</div>
+
+            <div class="DivProject">
+
+                <div class="ParagraphTitle"> MY PROJECTS </div>
+                <div>
+                    <table>
+                          <th>#</th>
+                          <th>Project Name</th>
+                          <th>Start Date</th>
+                          <th>Due Date</th>
+                          <th>Assign</th>
+                        <tr>
+                          <td>1</td>
+                          <td>Moltran Admin</td>
+                          <td>01/01/2015</td>
+                          <td>07/05/2015</td>
+                          <td>Coderthemes</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Moltran Frontend</td>
+                            <td>01/01/2015</td>
+                            <td>07/05/2015</td>
+                            <td>Coderthemes</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Moltran Admin</td>
+                            <td>01/01/2015</td>
+                            <td>07/05/2015</td>
+                            <td>Coderthemes</td>
+                          </tr>
+                      </table>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div style="display: none;" id="Settings">
+            <div class="DivSetting">
+                <div class="ParagraphTitle">
+                    EDIT PROFILE
+                </div>
+                <div class="InfoSettings"> Name</div>
+                <div> <input type="text" class="TextBox" /></div>
+                <div class="InfoSettings"> Email</div>
+                <div> <input type="text" class="TextBox" /></div>
+                <div class="InfoSettings"> User Name</div>
+                <div> <input type="text" class="TextBox" /></div>
+                <div class="InfoSettings"> Password</div>
+                <div> <input type="password" class="TextBox" /></div>
+                <div class="InfoSettings"> Re-Password</div>
+                <div> <input type="password" class="TextBox" /></div>
+                <div class="InfoSettings"> About Me </div>
+                <div> <textarea class="TextBox" style="height: 70px;"></textarea></div>
+                <div>
+                    <button class="btnSaveChange">Save Changes</button>
+                </div>
+
+            </div>
+            </div>
 </body>
 </html>
